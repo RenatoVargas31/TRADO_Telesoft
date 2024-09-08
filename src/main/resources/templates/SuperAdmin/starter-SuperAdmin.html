@@ -6,7 +6,7 @@
         <title>Starter page | Nazox - Admin & Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS BASE -->
-        <div th:insert="Common/cssBase :: css_Base"></div>
+        <meta th:replace="~{Common/cssBase :: css_Base}">
         <!-- End CSS BASE -->
     </head>
 
@@ -18,10 +18,10 @@
         <div id="layout-wrapper">
 
             <!-- ========== NavBar Start ========== -->
-            <header th:replace="SuperAdmin/fragments/navbar :: nav_bar"></header>
+            <header th:replace="~{SuperAdmin/fragments/navbar :: nav_bar}"></header>
             <!-- Navbar End -->
             <!-- ========== Left Sidebar Start ========== -->
-            <div th:replace="SuperAdmin/fragments/sidebar :: side_bar"></div>
+            <div th:replace="~{SuperAdmin/fragments/sidebar :: side_bar}"></div>
             <!-- Left Sidebar End -->
             <!-- ============================================================== -->
             <!-- Start right Content here -->
@@ -59,7 +59,7 @@
 
 
         <!-- JAVASCRIPT BASE-->
-        <div th:insert="Common/jsBase :: js_Base"></div>
+        <span th:replace="~{Common/jsBase :: js_Base}"></span>
         <!-- End JAVASCRIPT BASE-->
     </body>
 
