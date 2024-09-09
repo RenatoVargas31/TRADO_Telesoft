@@ -1,0 +1,197 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS BASE -->
+    <div th:insert="Common/cssBase :: css_Base"></div>
+    <!-- End CSS BASE -->
+</head>
+
+<body data-sidebar="dark">
+
+<!-- <body data-layout="horizontal" data-topbar="dark"> -->
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    <!-- ========== NavBar Start ========== -->
+    <header th:replace="AdminZonal/fragments/navbar :: nav_bar"></header>
+    <!-- Navbar End -->
+    <!-- ========== Left Sidebar Start ========== -->
+    <div th:replace="AdminZonal/fragments/sidebar :: side_bar"></div>
+    <!-- Left Sidebar End -->
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+        <div class="page-content">
+            <div class="container-fluid">
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0">Dashboard</h4>
+
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Utility</a></li>
+                                    <li class="breadcrumb-item active">Starter page</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Top 10 productos más importados</h4>
+
+                                <div id="line_chart_datalabel" class="apex-charts" dir="ltr"></div>
+                            </div>
+                        </div><!--end card-->
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Top 10 importadores de la zona</h4>
+
+                                <div id="bar_chart" class="apex-charts" dir="ltr"></div>
+                            </div>
+                        </div><!--end card-->
+                    </div>
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <h4 class="card-title mb-4">Pie Chart</h4>
+
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <h5 class="mb-0">2536</h5>
+                                        <p class="text-muted text-truncate">Activated</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h5 class="mb-0">69421</h5>
+                                        <p class="text-muted text-truncate">Pending</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <h5 class="mb-0">89854</h5>
+                                        <p class="text-muted text-truncate">Deactivated</p>
+                                    </div>
+                                </div>
+
+                                <canvas id="pie" height="260"></canvas>
+
+                            </div>
+                        </div>
+                    </div> <!-- end col -->
+
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Column with Data Labels</h4>
+
+                                <div id="column_chart_datalabel" class="apex-charts" dir="ltr"></div>
+                            </div>
+                        </div><!--end card-->
+                    </div> <!-- end col -->
+                </div> <!-- end row -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Line, Column & Area Chart</h4>
+
+                                <div id="mixed_chart" class="apex-charts" dir="ltr"></div>
+                            </div>
+                        </div><!--end card-->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Agentes asignados</h4>
+                                <p class="card-title-desc">You can also invert the colors—with light text on dark backgrounds—with <code>.table-dark</code>.
+                                </p>
+
+                                <div class="table-responsive">
+                                    <table class="table table-dark mb-0">
+
+                                        <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th>Usuarios asignados</th>
+                                            <th>Evaluación de usuarios</th>
+                                            <th>Importaciones gestionadas</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th>Dmitri Prokófievich Razumíkhin</th>
+                                            <td>750</td>
+                                            <td>89%</td>
+                                            <td>1900</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Rodión Románovich Raskólnikov</th>
+                                            <td>510</td>
+                                            <td>45%</td>
+                                            <td>600</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Avdotia Románovna Raskólnikova</th>
+                                            <td>98%</td>
+                                            <td>1000</td>
+                                            <td>2300</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+            </div> <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+
+    </div>
+    <!-- end main content-->
+</div>
+<!-- END layout-wrapper -->
+
+
+<!-- JAVASCRIPT BASE-->
+<div th:insert="Common/jsBase :: js_Base"></div>
+<!-- End JAVASCRIPT BASE-->
+
+<!-- apexcharts -->
+<script src="../libs/apexcharts/apexcharts.min.js"></script>
+<!-- apexcharts init -->
+<script src="../js/pages/apexcharts.init.js"></script>
+
+
+<!-- Chart JS -->
+<script src="../libs/chart.js/Chart.bundle.min.js"></script>
+<script src="../js/pages/chartjs.init.js"></script>
+
+</body>
+
+</html>
