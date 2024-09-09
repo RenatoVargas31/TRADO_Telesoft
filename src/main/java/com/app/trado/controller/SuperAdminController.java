@@ -10,4 +10,7 @@ public class SuperAdminController {
         return "SuperAdmin/starter-SuperAdmin";
     }
 
+    @GetMapping("/tabla")
+    public String tabla() {
+        return "SuperAdmin/prueba";}
 }
