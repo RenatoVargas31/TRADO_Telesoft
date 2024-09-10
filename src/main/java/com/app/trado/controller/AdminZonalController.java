@@ -22,4 +22,9 @@ public class AdminZonalController {
         return "AdminZonal/tablaFechaArribo-AdminZonal";
     }
 
+    @GetMapping("/reposicionProductos")
+    public String showReposicionProductos() {
+        return "AdminZonal/tablaReposicionProductos-AdminZonal";
+    }
+
 }
