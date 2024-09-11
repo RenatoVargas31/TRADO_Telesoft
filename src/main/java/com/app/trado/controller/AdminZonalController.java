@@ -31,4 +31,13 @@ public class AdminZonalController {
         return "AdminZonal/faq";
     }
 
+    @GetMapping("/gestionAgente")
+    public String showGestionAgente() { return "AdminZonal/gestionAgente-AdminZonal"; }
+
+    //Ingresar un nuevo Agente de Compra
+    @GetMapping("/nuevoAgente")
+    public String showNuevoAgente() { return "AdminZonal/nuevoAgente-AdminZonal"; }
+
+
+
 }
