@@ -397,19 +397,31 @@
                     </div> <!-- end col -->
                 </div> <!-- end row -->
                 <!--Start Modal-->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <!-- Modal para editar la fecha de arribo del producto -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="editArrivalDateModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Static backdrop</h5>
+                                <h5 class="modal-title" id="editArrivalDateModalLabel">Editar Fecha de Arribo del Producto</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <p>I will not close if you click outside me. Don't even try to press escape key.</p>
+                                <!-- Mostrar la fecha de envío actual -->
+                                <div class="mb-3">
+                                    <label for="currentShippingDate" class="form-label">Fecha de Envío Actual:</label>
+                                    <!-- Ejemplo de fecha actual de envío -->
+                                    <input type="text" id="currentShippingDate" class="form-control" value="2024-09-05" readonly>
+                                </div>
+
+                                <!-- Input para editar la fecha de arribo -->
+                                <div class="mb-3">
+                                    <label for="arrivalDate" class="form-label">Editar Fecha de Arribo:</label>
+                                    <input type="date" id="arrivalDate" class="form-control">
+                                </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-light waves-effect" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary waves-effect waves-light">Save</button>
+                                <button type="button" class="btn btn-light waves-effect" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary waves-effect waves-light">Guardar</button>
                             </div>
                         </div>
                     </div>
