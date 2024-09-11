@@ -39,6 +39,21 @@
         <div class="page-content">
             <div class="container-fluid">
 
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0">Editar perfil</h4>
+
+                            <div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item active">Home</li>
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Profile</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="container-xxl flex-grow-1 container-p-y">
                     <h3 class="address-title fw-bold">Editar perfil</h3>
                     <hr class="opacity-0">
@@ -85,7 +100,7 @@
                                 <h5 class="card-header">Detalles de Perfil</h5>
 
                                 <div class="card-body">
-                                    <form action="/perfil" method="post" enctype="multipart/form-data">
+                                    <form  enctype="multipart/form-data">
                                         <input type="hidden" name="action" value="updateProfile1">
                                         <input type="hidden" name="resetPhoto" id="resetPhoto" value="false">
 
@@ -116,7 +131,7 @@
                                             </div>
                                         </div>
                                         <div class="mt-2">
-                                            <button type="submit" class="btn btn-primary me-2" style="background-color: #0e5a05; color: #ffffff; border: 2px solid #115e08;  border-radius: 8px; font-size: 14px; cursor: pointer; transition: background-color 0.3s, border-color 0.3s;" tabindex="0">Guardar cambios</button>
+                                            <a href="/adminzonal/dashboard" type="submit" class="btn btn-primary me-2" style="background-color: #0e5a05; color: #ffffff; border: 2px solid #115e08;  border-radius: 8px; font-size: 14px; cursor: pointer; transition: background-color 0.3s, border-color 0.3s;" tabindex="0">Guardar cambios</a>
                                         </div>
                                     </form>
                                 </div>
@@ -125,51 +140,6 @@
                     </div>
 
 
-                    <div class="col-md-12">
-                            <div class="card mb-4">
-                                <h5 class="card-header">Reestablecer Contraseña</h5>
-                                <hr class="my-0">
-                                <div class="card-body">
-                                    <form action="/path/to/ServletCord" method="post">
-                                        <input type="hidden" name="action" value="changePassword">
-                                        <div class="row">
-                                            <div class="row">
-                                            <div class="mb-3 col-md-6">
-                                                <label for="currentPassword" class="form-label">Contraseña Actual</label>
-                                                <p class="text-muted mb-2 mt-2">Introduzca su contraseña actual</p>
-                                                <input class="form-control" type="password" id="currentPassword" name="currentPassword" required>
-                                            </div>
-                                            </div>
-                                            <div class="mb-3 col-md-6">
-
-                                                <label for="newPassword" class="form-label">Nueva Contraseña</label>
-                                                <p class="text-muted mb-2 mt-2">Introduzca su nueva contraseña</p>
-
-                                                <input class="form-control" type="password" id="newPassword" name="newPassword" required>
-                                                <ul class="text-muted mb-2 mt-2 mx-3">
-                                                    <li>La longitud mínima de la contraseña es de 8 caracteres y máxima de 16 caracteres</li>
-                                                    <li>Su contraseña debe contener como mínimo 1 número</li>
-                                                    <li>Su contraseña debe contener como mínimo 2 caracteres especiales</li>
-                                                    <li>Su contraseña debe contener como mínimo 1 letra mayúscula y minúscula</li>
-                                                </ul>
-                                            </div>
-                                            <div class="mb-3 col-md-6">
-                                                <label for="confirmNewPassword" class="form-label">Confirmar Nueva Contraseña</label>
-                                                <p class="text-muted mb-2 mt-2">Introduzca de nuevo su contraseña. Asegúrese de que sean idénticas</p>
-
-                                                <input class="form-control" type="password" id="confirmNewPassword" name="confirmNewPassword" required>
-                                                <hr class="opacity-0">
-                                                <div class="mt-2">
-                                                    <button type="submit" class="btn btn-primary me-2" style="background-color: #0e5a05; color: #ffffff; border: 2px solid #115e08;  border-radius: 8px; font-size: 14px; cursor: pointer; transition: background-color 0.3s, border-color 0.3s;" tabindex="0">Cambiar Contraseña</button>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <!-- Mensajes de éxito y error -->
@@ -181,6 +151,20 @@
 
         </div>
         <!-- End Page-content -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <script>document.write(new Date().getFullYear())</script> © TRADO.
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-end d-none d-sm-block">
+                        Crafted with <i class="mdi mdi-heart text-danger"></i> by TelesoftGT
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
     <!-- end main content-->
 </div>

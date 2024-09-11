@@ -35,6 +35,9 @@ public class AdminZonalController {
         return "AdminZonal/profile";
     }
 
+    @GetMapping("/contraseña")
+    public String showPassword() { return "AdminZonal/password"; }
+
     @GetMapping("/gestionAgente")
     public String showGestionAgente() { return "AdminZonal/gestionAgente-AdminZonal"; }
 
