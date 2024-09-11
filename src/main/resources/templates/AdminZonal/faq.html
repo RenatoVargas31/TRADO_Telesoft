@@ -1,228 +1,400 @@
 <!doctype html>
-<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <title>FAQ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS BASE -->
-    <meta th:replace="~{Common/cssBase :: css_Base}">
-    <!-- End CSS BASE -->
-    <!-- DataTables -->
-    <link href="../libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="../libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="../libs/datatables.net-select-bs4/css/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <head>
+        <meta charset="utf-8" />
+        <title>Ayuda | TRADO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS BASE -->
+        <meta th:replace="~{Common/cssBase :: css_Base}">
+        <!-- End CSS BASE -->
 
-    <!-- Responsive datatable examples -->
-    <link href="../libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-</head>
+    </head>
 
-<body data-sidebar="dark">
+    <body data-sidebar="dark">
+    
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
 
-<!-- <body data-layout="horizontal" data-topbar="dark"> -->
+        <!-- Begin page -->
+        <div id="layout-wrapper">
 
-<!-- Begin page -->
-<div id="layout-wrapper">
+            <!-- ========== NavBar Start ========== -->
+            <header th:replace="~{AdminZonal/fragments/navbar :: nav_bar}"></header>
+            <!-- Navbar End -->
+            <!-- ========== Left Sidebar Start ========== -->
+            <div th:replace="~{AdminZonal/fragments/sidebar :: side_bar}"></div>
+            <!-- Left Sidebar End -->
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
 
-    <!-- ========== NavBar Start ========== -->
-    <header th:replace="AdminZonal/fragments/navbar :: nav_bar"></header>
-    <!-- Navbar End -->
+                <div class="page-content">
+                    <div class="container-fluid">
 
-    <!-- ========== Left Sidebar Start ========== -->
-    <div th:replace="AdminZonal/fragments/sidebar :: side_bar"></div>
-    <!-- Left Sidebar End -->
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                    <h4 class="mb-sm-0">FAQs</h4>
 
-    <!-- ============================================================== -->
-    <!-- Start right Content here -->
-    <!-- ============================================================== -->
-    <div class="main-content">
-        <div class="page-content">
-            <div class="container-fluid">
 
-                <!-- start page title -->
-                <div class="row justify-content-center">
-                    <div class="col-8 mx-auto">
-                        <hr class="opacity-0">
-                        <div class="page-title-box d-flex align-items-center justify-content-center text-center">
-                            <h1 style="font-size:52px; font-weight:515; color: #303439; line-height: 1.5">Preguntas frecuentes sobre Administrador Zonal</h1>
 
-                        </div>
-                        <hr >
-                        <hr class="opacity-0">
-                        <div class="row align-items-center">
-                            <!-- Texto -->
-                            <div class="col-8">
-                                <div class="page-title-box text-center">
-                                    <h3 style="font-size:20px; font-weight:normal; color: #404040; line-height: 1.5">
-                                        ¿Tienes algunas dudas sobre el rol de Administrador Zonal?
-                                    </h3>
-                                </div>
-                                <div class="page-title-box text-center">
-                                    <h3 style="font-size:20px; font-weight:normal; color: #404040; line-height: 1.5">
-                                        No te preocupes, sabemos que eres parte de un rol importante y meticuloso. Por ello, tenemos la solución a las preguntas más frecuentes que otros administradores como tú se realizan a diario.
-                                    </h3>
                                 </div>
                             </div>
-
-                            <!-- Imagen -->
-                            <div class="col-4">
-                                <img src="/images/help.png" alt="Descripción de la imagen" class="img-fluid">
-                            </div>
                         </div>
-                        <hr >
-                        <hr class="opacity-0">
+                        <!-- end page title -->
 
-                        <!-- Acordeón -->
-                        <div class="page-title-box d-flex align-items-center justify-content-center text-center">
-                            <div class="card mb-1 shadow-none">
-                                <a href="#collapse1" class="text-reset" data-bs-toggle="collapse"
-                                   aria-expanded="true"
-                                   aria-controls="collapse1">
-                                    <div class="card-header" id="heading1">
-                                        <h6 class="m-0">
-                                            ¿De qué trata el rol de Administrador Zonal?
-                                            <i class="mdi mdi-minus float-end accor-plus-icon"></i>
-                                        </h6>
-                                    </div>
-                                </a>
-
-                                <div id="collapse1" class="collapse show"
-                                     aria-labelledby="heading1" data-bs-parent="#accordion">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
                                     <div class="card-body">
-                                        El administrador zonal puede ingresar a la plataforma con correo y contraseña. Sus usuarios
-                                        serán creados por el superAdmin y a su vez serán asignados a una zona en específico. Ellos
-                                        no pueden cambiarse de zona. En caso requieran un cambio de contraseña, se deberá
-                                        hacerse por el flujo regular de “Cambio de contraseña” en el login.
+                                        <div class="row mt-4">
+                                            <div class="col-lg-12">
+                                                <div class="text-center">
+                                                    <h4> ¿Tienes algunas dudas sobre el rol de Administrador Zonal?
+                                                    </h4>
+                                                    <p class="text-muted"> No te preocupes, sabemos que eres parte de un rol importante y meticuloso. Por ello, tenemos la solución a las preguntas más frecuentes que otros administradores como tú se realizan a diario.
+                                                    </p>
+
+                                                    <div>
+                                                        <button type="button" class="btn btn-primary mt-2 me-2 waves-effect waves-light">Envíanos un correo</button>
+                                                        <button type="button" class="btn btn-info mt-2 waves-effect waves-light">Envíanos un tweet</button>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="row mt-5 justify-content-center">
+                                            <div class="col-lg-10">
+                                                <div>
+                                                    <ul class="nav nav-pills faq-nav-tabs justify-content-center" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active" data-bs-toggle="pill" href="#faq-gen-ques" role="tab">
+                                                              Preguntas frecuentes
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-bs-toggle="pill" href="#faq-privacy" role="tab">
+                                                                Privacy Policy
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" data-bs-toggle="pill" href="#faq-pricing" role="tab">
+                                                                Pricing & Plans
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="tab-content pt-5">
+                                                        <div class="tab-pane fade show active" id="faq-gen-ques" role="tabpanel">
+                                                            <div>
+                                                                <div class="text-center mb-5">
+                                                                    <h5>Preguntas frecuentes</h5>
+                                                                    <p>Acerca de tu rol de Administrador Zonal</p>
+                                                                </div>
+
+                                                                <div id="gen-question-accordion" class="custom-accordion-arrow">
+                                                                    <div class="card">
+                                                                        <a href="#gen-question-collapseOne" class="text-reset" data-bs-toggle="collapse"
+                                                                           aria-expanded="true"
+                                                                           aria-controls="gen-question-collapseOne">
+                                                                            <div class="card-header" id="gen-question-headingOne">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> ¿De qué trata el rol de Administrador Zonal?
+
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+
+                                                                        <div id="gen-question-collapseOne" class="collapse show"
+                                                                             aria-labelledby="gen-question-headingOne" data-bs-parent="#gen-question-accordion">
+                                                                            <div class="card-body">
+                                                                                El administrador zonal puede ingresar a la plataforma con correo y contraseña. Sus usuarios
+                                                                                serán creados por el superAdmin y a su vez serán asignados a una zona en específico. Ellos
+                                                                                no pueden cambiarse de zona. En caso requieran un cambio de contraseña, se deberá
+                                                                                hacerse por el flujo regular de “Cambio de contraseña” en el login.  </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                        <a href="#gen-question-collapseTwo" class="collapsed" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           aria-controls="gen-question-collapseTwo">
+                                                                            <div class="card-header" id="gen-question-headingTwo">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> ¿Qué privilegios tengo como Administrador Zonal?
+
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+                                                                        <div id="gen-question-collapseTwo" class="collapse" aria-labelledby="gen-question-headingTwo"
+                                                                             data-bs-parent="#gen-question-accordion">
+                                                                            <div class="card-body">
+                                                                                El Administrador zonal tiene la facultad de poder crear nuevos agentes dentro de mi zona asignada para gestionar adecuadamente los recursos humanos dentro de la zona..
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                        <a href="#gen-question-collapseThree" class="collapsed" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           aria-controls="gen-question-collapseThree">
+                                                                            <div class="card-header" id="gen-question-headingThree">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> ¿Cómo repongo productos que hacen falta?
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+                                                                        <div id="gen-question-collapseThree" class="collapse"
+                                                                             aria-labelledby="gen-question-headingThree" data-bs-parent="#gen-question-accordion">
+                                                                            <div class="card-body">
+                                                                                El mismo sistema está diseñado para alertar al Administrador Zonal cuando el stock de un producto esté por debajo de 25 unidades. Así, el administrador debe poder enviar una solicitud de reposición al SuperAdmin desde la plataforma.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="faq-privacy" role="tabpanel">
+                                                            <div>
+                                                                <div class="text-center mb-5">
+                                                                    <h5>Privacy Policy</h5>
+                                                                    <p>Neque porro quisquam est, qui dolorem ipsum quia</p>
+                                                                </div>
+
+                                                                <div id="privacy-accordion" class="custom-accordion-arrow">
+
+                                                                    <div class="card">
+                                                                        <a href="#privacy-collapseOne" class="collapsed" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           aria-controls="privacy-collapseOne">
+                                                                            <div class="card-header" id="privacy-headingOne">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> Why do we use it ?
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+                                                                        <div id="privacy-collapseOne" class="collapse" aria-labelledby="privacy-headingOne"
+                                                                             data-bs-parent="#privacy-accordion">
+                                                                            <div class="card-body">
+                                                                                Everyone realizes why a new common language would be desirable one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                        <a href="#privacy-collapseTwo" class="text-reset" data-bs-toggle="collapse"
+                                                                           aria-expanded="true"
+                                                                           aria-controls="privacy-collapseTwo">
+                                                                            <div class="card-header" id="privacy-headingTwo">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> What is Lorem Ipsum ?
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+
+                                                                        <div id="privacy-collapseTwo" class="collapse show"
+                                                                             aria-labelledby="privacy-headingOne" data-bs-parent="#privacy-accordion">
+                                                                            <div class="card-body">
+                                                                                If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                        <a href="#privacy-collapseThree" class="collapsed" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           aria-controls="privacy-collapseThree">
+                                                                            <div class="card-header" id="privacy-headingThree">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> Where can I get some ?
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+                                                                        <div id="privacy-collapseThree" class="collapse"
+                                                                             aria-labelledby="privacy-headingThree" data-bs-parent="#privacy-accordion">
+                                                                            <div class="card-body">
+                                                                                Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                        <a href="#privacy-collapseFour" class="collapsed" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           aria-controls="privacy-collapseFour">
+                                                                            <div class="card-header" id="privacy-headingFour">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> Where does it come from ?
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+                                                                        <div id="privacy-collapseFour" class="collapse"
+                                                                             aria-labelledby="privacy-headingFour" data-bs-parent="#privacy-accordion">
+                                                                            <div class="card-body">
+                                                                                To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family separate existence.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                        <a href="#privacy-collapseFive" class="collapsed" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           aria-controls="privacy-collapseFive">
+                                                                            <div class="card-header" id="privacy-headingFive">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> Where can I get some ?
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+                                                                        <div id="privacy-collapseFive" class="collapse"
+                                                                             aria-labelledby="privacy-headingFive" data-bs-parent="#privacy-accordion">
+                                                                            <div class="card-body">
+                                                                                It will be as simple in fact, it will be occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what occidental languages are members
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="tab-pane fade" id="faq-pricing" role="tabpanel">
+                                                            <div>
+                                                                <div class="text-center mb-5">
+                                                                    <h5>Pricing & Plans</h5>
+                                                                    <p>Sed ut perspiciatis unde omnis iste natus error sit</p>
+                                                                </div>
+
+                                                                <div id="pricing-accordion" class="custom-accordion-arrow">
+
+                                                                    <div class="card">
+                                                                        <a href="#pricing-collapseOne" class="text-reset" data-bs-toggle="collapse"
+                                                                           aria-expanded="true"
+                                                                           aria-controls="pricing-collapseOne">
+                                                                            <div class="card-header" id="pricing-headingOne">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> What is Lorem Ipsum ?
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+
+                                                                        <div id="pricing-collapseOne" class="collapse show"
+                                                                             aria-labelledby="pricing-headingOne" data-bs-parent="#pricing-accordion">
+                                                                            <div class="card-body">
+                                                                                If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                        <a href="#pricing-collapseTwo" class="collapsed" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           aria-controls="pricing-collapseTwo">
+                                                                            <div class="card-header" id="pricing-headingTwo">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> Where can I get some ?
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+                                                                        <div id="pricing-collapseTwo" class="collapse"
+                                                                             aria-labelledby="pricing-headingTwo" data-bs-parent="#pricing-accordion">
+                                                                            <div class="card-body">
+                                                                                It will be as simple in fact, it will be occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what occidental languages are members
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                        <a href="#pricing-collapseThree" class="collapsed" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           aria-controls="pricing-collapseThree">
+                                                                            <div class="card-header" id="pricing-headingThree">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> Why do we use it ?
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+                                                                        <div id="pricing-collapseThree" class="collapse" aria-labelledby="pricing-headingThree"
+                                                                             data-bs-parent="#pricing-accordion">
+                                                                            <div class="card-body">
+                                                                                Everyone realizes why a new common language would be desirable one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                        <a href="#pricing-collapseFour" class="collapsed" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           aria-controls="pricing-collapseFour">
+                                                                            <div class="card-header" id="pricing-headingFour">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> Where can I get some ?
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+                                                                        <div id="pricing-collapseFour" class="collapse"
+                                                                             aria-labelledby="pricing-headingFour" data-bs-parent="#pricing-accordion">
+                                                                            <div class="card-body">
+                                                                                Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                        <a href="#pricing-collapseFive" class="collapsed" data-bs-toggle="collapse"
+                                                                           aria-expanded="false"
+                                                                           aria-controls="pricing-collapseFive">
+                                                                            <div class="card-header" id="pricing-headingFive">
+                                                                                <h5 class="font-size-14 m-0">
+                                                                                    <i class="mdi mdi-chevron-up accor-arrow-icon"></i> Where does it come from ?
+                                                                                </h5>
+                                                                            </div>
+                                                                        </a>
+                                                                        <div id="pricing-collapseFive" class="collapse"
+                                                                             aria-labelledby="pricing-headingFive" data-bs-parent="#pricing-accordion">
+                                                                            <div class="card-body">
+                                                                                To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family separate existence.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
-
-
                         </div>
-                        <!-- Fin del Acordeón -->
-                        <!-- Acordeón -->
-                        <div class="page-title-box d-flex align-items-center justify-content-center text-center">
-                            <div class="card mb-1 shadow-none">
-                                <a href="#collapse2" class="text-reset" data-bs-toggle="collapse"
-                                   aria-expanded="true"
-                                   aria-controls="collapse2">
-                                    <div class="card-header" id="heading2">
-                                        <h6 class="m-0">
-                                            ¿Qué privilegios tengo como Administrador Zonal?
-                                            <i class="mdi mdi-minus float-end accor-plus-icon"></i>
-                                        </h6>
-                                    </div>
-                                </a>
+                        <!-- end row -->
 
-                                <div id="collapse2" class="collapse show"
-                                     aria-labelledby="heading2" data-bs-parent="#accordion">
-                                    <div class="card-body">
-                                        El Administrador zonal tiene la facultad de poder crear nuevos agentes dentro de mi zona asignada para gestionar adecuadamente los recursos humanos dentro de la zona..
-                                    </div>
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <script>document.write(new Date().getFullYear())</script> © Nazox.
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-end d-none d-sm-block">
+                                    Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign
                                 </div>
-
                             </div>
-
-
                         </div>
-                        <!-- Fin del Acordeón -->
-                        <!-- Acordeón -->
-                        <div class="page-title-box d-flex align-items-center justify-content-center text-center">
-                            <div class="card mb-1 shadow-none">
-                                <a href="#collapse3" class="text-reset" data-bs-toggle="collapse"
-                                   aria-expanded="true"
-                                   aria-controls="collapse3">
-                                    <div class="card-header" id="heading3">
-                                        <h6 class="m-0">
-                                            ¿Cómo repongo productos que hacen falta?
-                                            <i class="mdi mdi-minus float-end accor-plus-icon"></i>
-                                        </h6>
-                                    </div>
-                                </a>
-
-                                <div id="collapse3" class="collapse show"
-                                     aria-labelledby="heading3" data-bs-parent="#accordion">
-                                    <div class="card-body">
-                                       El mismo sistema está diseñado para alertar al Administrador Zonal cuando el stock de un producto esté por debajo de 25 unidades. Así, el administrador debe poder enviar una solicitud de reposición al SuperAdmin desde la plataforma.
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-                        <!-- Fin del Acordeón -->
-<hr>
-
                     </div>
-                </div>
-                <!-- end page title -->
+                </footer>
 
             </div>
-            <!-- container-fluid -->
-
-
-
+            <!-- end main content-->
         </div>
-        <div class="container-fluid" style="background-color: #1c8111; color: #e0e0e0;">
-            <hr class="opacity-0">
-            <hr class="opacity-0">
-            <hr class="opacity-0">
-            <hr class="opacity-0">
-
-            <div class="page-title-box d-flex flex-column align-items-center text-center">
-                <h1 style="font-size:52px; font-weight:bold; color: white; line-height: 1.5">
-                    ¿Todo listo? ¡Comencemos!
-                </h1>
-                <hr style="border: 1px solid white; width: 80%; margin: 20px auto;">
-
-                <h3 style="font-size:20px; font-weight:normal; color: #ffffff; line-height: 1.5; margin-top: 20px;">
-                    Iniciemos revisando las estadísticas de los productos.
-                </h3>
-                <div class="mt-4">
-                    <!-- Botón con estilo personalizado -->
-                    <a href="dashboard" class="btn" style="background-color: #e0e0e0; color: #104909; border: 2px solid #008000;">Ir al Dashboard</a>
-                </div>
-                <hr class="opacity-0">
-
-            </div>
+        <!-- END layout-wrapper -->
 
 
-        </div>
-        <!-- End Page-content -->
-    </div>
-    <!-- end main content-->
-</div>
-<!-- END layout-wrapper -->
-
-
-<!-- JAVASCRIPT BASE-->
-<span th:replace="~{Common/jsBase :: js_Base}"></span>
-<!-- End JAVASCRIPT BASE-->
-
-<!-- Required datatable js -->
-<script src="../libs/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-<!-- Buttons examples -->
-<script src="../libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-<script src="../libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
-<script src="../libs/jszip/jszip.min.js"></script>
-<script src="../libs/pdfmake/build/pdfmake.min.js"></script>
-<script src="../libs/pdfmake/build/vfs_fonts.js"></script>
-<script src="../libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
-<script src="../libs/datatables.net-buttons/js/buttons.print.min.js"></script>
-<script src="../libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
-
-<script src="../libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-<script src="../libs/datatables.net-select/js/dataTables.select.min.js"></script>
-
-<!-- Responsive examples -->
-<script src="../libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
-
-<!-- Datatable init js -->
-<script src="../js/pages/datatables.init.js"></script>
-</body>
+        <!-- JAVASCRIPT BASE-->
+        <span th:replace="~{Common/jsBase :: js_Base}"></span>
+        <!-- End JAVASCRIPT BASE-->
+    </body>
 
 </html>
