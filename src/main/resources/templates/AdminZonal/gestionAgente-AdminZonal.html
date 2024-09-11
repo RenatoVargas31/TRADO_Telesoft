@@ -6,7 +6,7 @@
     <title>Starter page | Nazox - Admin & Dashboard Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS BASE -->
-    <div th:insert="Common/cssBase :: css_Base"></div>
+    <meta th:replace="~{Common/cssBase :: css_Base}">
     <!-- End CSS BASE -->
 </head>
 
@@ -150,7 +150,7 @@
 
 
 <!-- JAVASCRIPT BASE-->
-<div th:insert="Common/jsBase :: js_Base"></div>
+<span th:replace="~{Common/jsBase :: js_Base}"></span>
 
 <!-- apexcharts -->
 <script th:src="@{../libs/apexcharts/apexcharts.min.js}"></script>
