@@ -8,6 +8,7 @@
     <!-- CSS BASE -->
     <meta th:replace="~{Common/cssBase :: css_Base}">
     <!-- End CSS BASE -->
+
 </head>
 
 <body data-sidebar="dark">
@@ -164,20 +165,28 @@
                                             <input class="form-control-plaintext" type="email" placeholder="Tecnología y Consultoría Integral S.A." id="example-email-input"readonly>
                                         </div>
                                     </div>
+                                    <div class="row mb-3">
+                                        <label for="example-email-input" class="col-sm-6 col-form-label">Estado</label>
+                                        <div class="col-sm-6">
+                                            <a class="btn btn-success " > Aprobado</a>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </div>
                         </div><!--end card-->
                     </div>
+                    <!--AQUI -->
                     <div class="col-lg-6">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title mb-4">Raiting</h4>
-                                <canvas id="bar" height="300"></canvas>
 
+                                <div id="column_chart" class="apex-charts" dir="ltr"></div>
                             </div>
-                        </div>
-                    </div> <!-- end col -->
+                        </div><!--end card-->
+                    </div>
+
                 </div>
                 <!-- end row -->
             </div> <!-- container-fluid -->
@@ -202,11 +211,10 @@
 </div>
 <!-- END layout-wrapper -->
 
-
 <!-- JAVASCRIPT BASE-->
 <span th:replace="~{Common/jsBase :: js_Base}"></span>
-<script th:src="@{../libs/chart.js/Chart.bundle.min.js}"></script>
-<script th:src="@{../js/pages/chartjs.init.js}"></script>
+<script th:src="@{../libs/apexcharts/apexcharts.min.js}"></script>
+<script th:src="@{../js/pages/apexcharts.init.js}"></script>
 <!-- End JAVASCRIPT BASE-->
 </body>
 
