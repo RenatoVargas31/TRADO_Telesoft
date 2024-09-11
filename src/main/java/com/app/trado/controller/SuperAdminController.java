@@ -17,6 +17,16 @@ public class SuperAdminController {
         return "SuperAdmin/dashboard-SAdmin";
     }
 
+    @GetMapping("/admZonalNuevo")
+    public String viewAdmZonalNuevo() {
+        return "SuperAdmin/admZonalNuevo-SAdmin";
+    }
+
+    @GetMapping("/admZonalEditar")
+    public String viewAdmZonalEditar() {
+        return "SuperAdmin/admZonalEditar-SAdmin";
+    }
+
     @GetMapping("/admZonalActivos")
     public String viewAdmZonalActivos() {
         return "SuperAdmin/admZonalActivos-SAdmin";
@@ -25,6 +35,11 @@ public class SuperAdminController {
     @GetMapping("/admZonalInactivos")
     public String viewAdmZonalInactivos() {
         return "SuperAdmin/admZonalInactivos-SAdmin";
+    }
+
+    @GetMapping("/agentCompraEditar")
+    public String viewAgentCompraEditar() {
+        return "SuperAdmin/agentCompraEditar-SAdmin";
     }
 
     @GetMapping("/agentCompraPostula")
@@ -46,6 +61,12 @@ public class SuperAdminController {
     public String viewImportdorSolicitud() {
         return "SuperAdmin/importadorSolicitud-SAdmin";
     }
+
+    @GetMapping("/importadorEditar")
+    public String viewImportadorEditar() {
+        return "SuperAdmin/importadorEditar-SAdmin";
+    }
+
     @GetMapping("/importadorActivos")
     public String viewImportadorActivos() {
         return "SuperAdmin/importadorActivos-SAdmin";
@@ -53,6 +74,28 @@ public class SuperAdminController {
     @GetMapping("/importadorInactivos")
     public String viewImportadorInactivos() {
         return "SuperAdmin/importadorInactivos-SAdmin";
+    }
+    @GetMapping("/productoRepo")
+    public String viewProductoRepo() {
+        return "SuperAdmin/productoRepo-SAdmin";
+    }
+    @GetMapping("/productoLista")
+    public String viewProductoLista() {
+        return "SuperAdmin/productoLista-SAdmin";
+    }
+
+    @GetMapping("/proveedorNuevo")
+    public String viewProveedorNuevo() {
+        return "SuperAdmin/proveedorNuevo-SAdmin";
+    }
+    @GetMapping("/proveedorEditar")
+    public String viewProveedorEditar() {
+        return "SuperAdmin/proveedorEditar-SAdmin";
+    }
+
+    @GetMapping("/proveedorLista")
+    public String viewProveedorLista() {
+        return "SuperAdmin/proveedorLista-SAdmin";
     }
     @GetMapping("/ayuda")
     public String viewAyuda() {

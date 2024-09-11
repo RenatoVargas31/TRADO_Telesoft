@@ -99,7 +99,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     var a = $("#datatable-admzonal-inactivo").DataTable({
         lengthChange: !1,
-        pageLength: 5,
+        pageLength: 7,
         info: !1,
         language: {paginate: {previous: "<i class='mdi mdi-chevron-left'>", next: "<i class='mdi mdi-chevron-right'>"}},
         drawCallback: function () {
@@ -215,5 +215,59 @@ $(document).ready(function () {
         ]
     });
     a.buttons().container().appendTo("#datatable-importador-inactivo_wrapper .col-md-6:eq(0)");
+    $(".dataTables_length select").addClass("form-select form-select-sm");
+});
+//Productos - Reposiciones
+$(document).ready(function () {
+    var a = $("#datatable-producto-repo").DataTable({
+        lengthChange: !1,
+        pageLength: 7,
+        info: !1,
+        language: {paginate: {previous: "<i class='mdi mdi-chevron-left'>", next: "<i class='mdi mdi-chevron-right'>"}},
+        drawCallback: function () {
+            $(".dataTables_paginate > .pagination").addClass("pagination-rounded")
+        },
+        buttons: ["print", "excel", "pdf", "csv"],
+        columnDefs: [
+            { targets: -1, searchable: false } // Deshabilitar búsqueda en la última columna
+        ]
+    });
+    a.buttons().container().appendTo("#datatable-producto-repo_wrapper .col-md-6:eq(0)");
+    $(".dataTables_length select").addClass("form-select form-select-sm");
+});
+//Productos - Listado
+$(document).ready(function () {
+    var a = $("#datatable-producto-lista").DataTable({
+        lengthChange: !1,
+        pageLength: 7,
+        info: !1,
+        language: {paginate: {previous: "<i class='mdi mdi-chevron-left'>", next: "<i class='mdi mdi-chevron-right'>"}},
+        drawCallback: function () {
+            $(".dataTables_paginate > .pagination").addClass("pagination-rounded")
+        },
+        buttons: ["print", "excel", "pdf", "csv"],
+        columnDefs: [
+            { targets: -1, searchable: false } // Deshabilitar búsqueda en la última columna
+        ]
+    });
+    a.buttons().container().appendTo("#datatable-producto-lista_wrapper .col-md-6:eq(0)");
+    $(".dataTables_length select").addClass("form-select form-select-sm");
+});
+//Proveedores - Listado
+$(document).ready(function () {
+    var a = $("#datatable-proveedor-lista").DataTable({
+        lengthChange: !1,
+        pageLength: 7,
+        info: !1,
+        language: {paginate: {previous: "<i class='mdi mdi-chevron-left'>", next: "<i class='mdi mdi-chevron-right'>"}},
+        drawCallback: function () {
+            $(".dataTables_paginate > .pagination").addClass("pagination-rounded")
+        },
+        buttons: ["print", "excel", "pdf", "csv"],
+        columnDefs: [
+            { targets: -1, searchable: false } // Deshabilitar búsqueda en la última columna
+        ]
+    });
+    a.buttons().container().appendTo("#datatable-proveedor-lista_wrapper .col-md-6:eq(0)");
     $(".dataTables_length select").addClass("form-select form-select-sm");
 });
