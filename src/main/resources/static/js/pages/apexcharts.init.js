@@ -97,7 +97,7 @@ var options = {
     tooltip: {
         y: {
             formatter: function (e) {
-                return "$ " + e + " thousands"
+                return  e + " stars"
             }
         }
     },
