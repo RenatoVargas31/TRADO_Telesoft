@@ -30,6 +30,10 @@ public class AdminZonalController {
     public String showFaq() {
         return "AdminZonal/faq";
     }
+    @GetMapping("/perfil")
+    public String showPerfil() {
+        return "AdminZonal/profile";
+    }
 
     @GetMapping("/gestionAgente")
     public String showGestionAgente() { return "AdminZonal/gestionAgente-AdminZonal"; }
