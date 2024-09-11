@@ -9,12 +9,12 @@
     <meta th:replace="~{Common/cssBase :: css_Base}">
     <!-- End CSS BASE -->
     <!-- DataTables -->
-    <link href="../libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="../libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="../libs/datatables.net-select-bs4/css/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link th:href="@{../libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{../libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{../libs/datatables.net-select-bs4/css/select.bootstrap4.min.css}" rel="stylesheet" type="text/css" />
 
     <!-- Responsive datatable examples -->
-    <link href="../libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link th:href="@{../libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css}" rel="stylesheet" type="text/css" />
 </head>
 
 <body data-sidebar="dark">
@@ -85,7 +85,7 @@
                                         <td>Ordenador portátil</td>
                                         <td>2024-08-15</td>
                                         <td>2024-08-20</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -97,7 +97,7 @@
                                         <td>Monitor 27"</td>
                                         <td>2024-08-18</td>
                                         <td>2024-08-22</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -108,7 +108,7 @@
                                         <td>Teclado mecánico</td>
                                         <td>2024-08-20</td>
                                         <td>2024-08-25</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -119,7 +119,7 @@
                                         <td>Ratón inalámbrico</td>
                                         <td>2024-08-22</td>
                                         <td>2024-08-27</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -130,7 +130,7 @@
                                         <td>Impresora láser</td>
                                         <td>2024-08-25</td>
                                         <td>2024-08-30</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -141,7 +141,7 @@
                                         <td>Altavoces Bluetooth</td>
                                         <td>2024-09-01</td>
                                         <td>2024-09-05</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -152,7 +152,7 @@
                                         <td>Webcam HD</td>
                                         <td>2024-09-02</td>
                                         <td>2024-09-07</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -163,7 +163,7 @@
                                         <td>Hub USB 3.0</td>
                                         <td>2024-09-03</td>
                                         <td>2024-09-08</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -174,7 +174,7 @@
                                         <td>Soporte para monitor</td>
                                         <td>2024-09-04</td>
                                         <td>2024-09-09</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -185,7 +185,7 @@
                                         <td>Adaptador Ethernet</td>
                                         <td>2024-09-05</td>
                                         <td>2024-09-10</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -196,7 +196,7 @@
                                         <td>Mousepad con carga inalámbrica</td>
                                         <td>2024-09-06</td>
                                         <td>2024-09-11</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -207,7 +207,7 @@
                                         <td>Teclado compacto</td>
                                         <td>2024-09-07</td>
                                         <td>2024-09-12</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -218,7 +218,7 @@
                                         <td>Parlante portátil</td>
                                         <td>2024-09-08</td>
                                         <td>2024-09-13</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -229,7 +229,7 @@
                                         <td>Micrófono USB</td>
                                         <td>2024-09-09</td>
                                         <td>2024-09-14</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -240,7 +240,7 @@
                                         <td>Alfombrilla de silicona</td>
                                         <td>2024-09-10</td>
                                         <td>2024-09-15</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -251,7 +251,7 @@
                                         <td>Unidad de almacenamiento externa</td>
                                         <td>2024-09-11</td>
                                         <td>2024-09-16</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -262,7 +262,7 @@
                                         <td>Router Wi-Fi</td>
                                         <td>2024-09-12</td>
                                         <td>2024-09-17</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -273,7 +273,7 @@
                                         <td>Adaptador de corriente</td>
                                         <td>2024-09-13</td>
                                         <td>2024-09-18</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -284,7 +284,7 @@
                                         <td>Estabilizador de voltaje</td>
                                         <td>2024-09-14</td>
                                         <td>2024-09-19</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -295,7 +295,7 @@
                                         <td>Power Bank</td>
                                         <td>2024-09-15</td>
                                         <td>2024-09-20</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -306,7 +306,7 @@
                                         <td>Panel solar portátil</td>
                                         <td>2024-09-16</td>
                                         <td>2024-09-21</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -317,7 +317,7 @@
                                         <td>Audífonos con micrófono</td>
                                         <td>2024-09-17</td>
                                         <td>2024-09-22</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -328,7 +328,7 @@
                                         <td>Base de carga para móvil</td>
                                         <td>2024-09-18</td>
                                         <td>2024-09-23</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -339,7 +339,7 @@
                                         <td>Cámara de seguridad</td>
                                         <td>2024-09-19</td>
                                         <td>2024-09-24</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -350,7 +350,7 @@
                                         <td>Ventilador USB</td>
                                         <td>2024-09-20</td>
                                         <td>2024-09-25</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -361,7 +361,7 @@
                                         <td>Calentador de tazas</td>
                                         <td>2024-09-21</td>
                                         <td>2024-09-26</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -372,7 +372,7 @@
                                         <td>Hub de red</td>
                                         <td>2024-09-22</td>
                                         <td>2024-09-27</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -383,7 +383,7 @@
                                         <td>Kit de limpieza para PC</td>
                                         <td>2024-09-23</td>
                                         <td>2024-09-28</td>
-                                        <td  style="width: 100px;">
+                                        <td  >
                                             <a class="btn btn-outline-secondary btn-sm edit " title="Edit" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </a>
@@ -431,27 +431,27 @@
 <!-- End JAVASCRIPT BASE-->
 
 <!-- Required datatable js -->
-<script src="../libs/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script th:src="@{../libs/datatables.net/js/jquery.dataTables.min.js}"></script>
+<script th:src="@{../libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js}"></script>
 <!-- Buttons examples -->
-<script src="../libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-<script src="../libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
-<script src="../libs/jszip/jszip.min.js"></script>
-<script src="../libs/pdfmake/build/pdfmake.min.js"></script>
-<script src="../libs/pdfmake/build/vfs_fonts.js"></script>
-<script src="../libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
-<script src="../libs/datatables.net-buttons/js/buttons.print.min.js"></script>
-<script src="../libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+<script th:src="@{../libs/datatables.net-buttons/js/dataTables.buttons.min.js}"></script>
+<script th:src="@{../libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js}"></script>
+<script th:src="@{../libs/jszip/jszip.min.js}"></script>
+<script th:src="@{../libs/pdfmake/build/pdfmake.min.js}"></script>
+<script th:src="@{../libs/pdfmake/build/vfs_fonts.js}"></script>
+<script th:src="@{../libs/datatables.net-buttons/js/buttons.html5.min.js}"></script>
+<script th:src="@{../libs/datatables.net-buttons/js/buttons.print.min.js}"></script>
+<script th:src="@{../libs/datatables.net-buttons/js/buttons.colVis.min.js}"></script>
 
-<script src="../libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-<script src="../libs/datatables.net-select/js/dataTables.select.min.js"></script>
+<script th:src="@{../libs/datatables.net-keytable/js/dataTables.keyTable.min.js}"></script>
+<script th:src="@{../libs/datatables.net-select/js/dataTables.select.min.js}"></script>
 
 <!-- Responsive examples -->
-<script src="../libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+<script th:src="@{../libs/datatables.net-responsive/js/dataTables.responsive.min.js}"></script>
+<script th:src="@{../libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js}"></script>
 
 <!-- Datatable init js -->
-<script src="../js/pages/datatables.init.js"></script>
+<script th:src="@{../js/pages/datatables.init.js}"></script>
 </body>
 
 </html>
