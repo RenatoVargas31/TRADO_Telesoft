@@ -9,12 +9,12 @@
     <meta th:replace="~{Common/cssBase :: css_Base}">
     <!-- End CSS BASE -->
     <!-- DataTables -->
-    <link href="../libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="../libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
-    <link href="../libs/datatables.net-select-bs4/css/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link th:href="@{../libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{../libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{../libs/datatables.net-select-bs4/css/select.bootstrap4.min.css}" rel="stylesheet" type="text/css" />
 
     <!-- Responsive datatable examples -->
-    <link href="../libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link th:href="@{../libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css}" rel="stylesheet" type="text/css" />
 </head>
 
 <body data-sidebar="dark">
@@ -71,7 +71,7 @@
                                         <th>Tipo </th>
                                         <th>Cantidad</th>
                                         <th>Estado</th>
-                                        <th>Acciones</th>
+                                        <th>Reponer</th>
                                     </tr>
                                     </thead>
 
@@ -81,141 +81,221 @@
                                         <td>Converse Chuck Taylor</td>
                                         <td>Calzado</td>
                                         <td>18</td>
-                                        <td><span style="background-color: blue; color: white; padding: 2px 4px;">Reposición en curso</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td class="bg-info-subtle">Reposición en curso</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Levi's 512 Slim Taper Fit Jeans</td>
                                         <td>Pantalones</td>
                                         <td>23</td>
-                                        <td><span style="background-color: orange; color: white; padding: 2px 4px;">A espera de solicitud de reposición</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>>A espera de solicitud de reposición</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Puma Suede Classic</td>
                                         <td>Calzado</td>
                                         <td>30</td>
-                                        <td><span style="background-color: green; color: white; padding: 2px 4px;">Stock adecuado</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Stock adecuado</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Uniqlo Ultra Light Down Vest</td>
                                         <td>Chalecos</td>
                                         <td>10</td>
-                                        <td><span style="background-color: blue; color: white; padding: 2px 4px;">Reposición en curso</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Reposición en curso</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Adidas Superstar</td>
                                         <td>Calzado</td>
                                         <td>5</td>
-                                        <td><span style="background-color: blue; color: white; padding: 2px 4px;">Reposición en curso</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Reposición en curso</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Nike Air Force 1</td>
                                         <td>Calzado</td>
                                         <td>12</td>
-                                        <td><span style="background-color: blue; color: white; padding: 2px 4px;">Reposición en curso</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Reposición en curso</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Levi's 501 Original Fit</td>
                                         <td>Pantalones</td>
                                         <td>40</td>
-                                        <td><span style="background-color: green; color: white; padding: 2px 4px;">Stock adecuado</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Stock adecuado</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>H&M Skinny Fit Jeans</td>
                                         <td>Pantalones</td>
                                         <td>8</td>
-                                        <td><span style="background-color: orange; color: white; padding: 2px 4px;">A espera de solicitud de reposición</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>A espera de solicitud de reposición</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Zara Cropped Hoodie</td>
                                         <td>Sudaderas</td>
                                         <td>35</td>
-                                        <td><span style="background-color: green; color: white; padding: 2px 4px;">Stock adecuado</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Stock adecuado</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>H&M Relaxed Fit T-Shirt</td>
                                         <td>Camisetas</td>
                                         <td>50</td>
-                                        <td><span style="background-color: green; color: white; padding: 2px 4px;">Stock adecuado</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Stock adecuado</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>North Face Puffer Jacket</td>
                                         <td>Chaquetas</td>
                                         <td>3</td>
-                                        <td><span style="background-color: blue; color: white; padding: 2px 4px;">Reposición en curso</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Reposición en curso</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Zara Pleated Skirt</td>
                                         <td>Faldas</td>
                                         <td>25</td>
-                                        <td><span style="background-color: orange; color: white; padding: 2px 4px;">A espera de solicitud de reposición</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>A espera de solicitud de reposición</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>H&M Denim Jacket</td>
                                         <td>Chaquetas</td>
                                         <td>60</td>
-                                        <td><span style="background-color: green; color: white; padding: 2px 4px;">Stock adecuado</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Stock adecuado</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Patagonia Fleece Jacket</td>
                                         <td>Chaquetas</td>
                                         <td>45</td>
-                                        <td><span style="background-color: green; color: white; padding: 2px 4px;">Stock adecuado</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Stock adecuado</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Levi's Sherpa Trucker Jacket</td>
                                         <td>Chaquetas</td>
                                         <td>15</td>
-                                        <td><span style="background-color: blue; color: white; padding: 2px 4px;">Reposición en curso</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Reposición en curso</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Gucci Leather Belt</td>
                                         <td>Accesorios</td>
                                         <td>7</td>
-                                        <td><span style="background-color: blue; color: white; padding: 2px 4px;">Reposición en curso</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Reposición en curso</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Zara Blazer</td>
                                         <td>Sacos</td>
                                         <td>50</td>
-                                        <td><span style="background-color: green; color: white; padding: 2px 4px;">Stock adecuado</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Stock adecuado</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Nike Dri-FIT Shorts</td>
                                         <td>Pantalones cortos</td>
                                         <td>20</td>
-                                        <td><span style="background-color: blue; color: white; padding: 2px 4px;">Reposición en curso</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Reposición en curso</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Adidas Running Shorts</td>
                                         <td>Pantalones cortos</td>
                                         <td>28</td>
-                                        <td><span style="background-color: orange; color: white; padding: 2px 4px;">A espera de solicitud de reposición</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>A espera de solicitud de reposición</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Zara Slim Fit Blazer</td>
                                         <td>Sacos</td>
                                         <td>65</td>
-                                        <td><span style="background-color: green; color: white; padding: 2px 4px;">Stock adecuado</span></td>
-                                        <td>👁‍🗨 👤 🗑️</td>
+                                        <td>Stock adecuado</td>
+                                        <td>
+                                            <a class="btn btn-outline-secondary btn-sm edit " title="Reponer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <i class=" fas fa-people-carry"></i>
+                                            </a>
+                                        </td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -239,27 +319,27 @@
 <!-- End JAVASCRIPT BASE-->
 
 <!-- Required datatable js -->
-<script src="../libs/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="../libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script th:src="@{../libs/datatables.net/js/jquery.dataTables.min.js}"></script>
+<script th:src="@{../libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js}"></script>
 <!-- Buttons examples -->
-<script src="../libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-<script src="../libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
-<script src="../libs/jszip/jszip.min.js"></script>
-<script src="../libs/pdfmake/build/pdfmake.min.js"></script>
-<script src="../libs/pdfmake/build/vfs_fonts.js"></script>
-<script src="../libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
-<script src="../libs/datatables.net-buttons/js/buttons.print.min.js"></script>
-<script src="../libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+<script th:src="@{../libs/datatables.net-buttons/js/dataTables.buttons.min.js}"></script>
+<script th:src="@{../libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js}"></script>
+<script th:src="@{../libs/jszip/jszip.min.js}"></script>
+<script th:src="@{../libs/pdfmake/build/pdfmake.min.js}"></script>
+<script th:src="@{../libs/pdfmake/build/vfs_fonts.js}"></script>
+<script th:src="@{../libs/datatables.net-buttons/js/buttons.html5.min.js}"></script>
+<script th:src="@{../libs/datatables.net-buttons/js/buttons.print.min.js}"></script>
+<script th:src="@{../libs/datatables.net-buttons/js/buttons.colVis.min.js}"></script>
 
-<script src="../libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
-<script src="../libs/datatables.net-select/js/dataTables.select.min.js"></script>
+<script th:src="@{../libs/datatables.net-keytable/js/dataTables.keyTable.min.js}"></script>
+<script th:src="@{../libs/datatables.net-select/js/dataTables.select.min.js}"></script>
 
 <!-- Responsive examples -->
-<script src="../libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+<script th:src="@{../libs/datatables.net-responsive/js/dataTables.responsive.min.js}"></script>
+<script th:src="@{../libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js}"></script>
 
 <!-- Datatable init js -->
-<script src="../js/pages/datatables.init.js"></script>
+<script th:src="@{../js/pages/datatables.init.js}"></script>
 </body>
 
 </html>

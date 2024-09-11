@@ -38,9 +38,11 @@ public class AdminZonalController {
     @GetMapping("/gestionAgente")
     public String showGestionAgente() { return "AdminZonal/gestionAgente-AdminZonal"; }
 
-    //Ingresar un nuevo Agente de Compra
     @GetMapping("/nuevoAgente")
     public String showNuevoAgente() { return "AdminZonal/nuevoAgente-AdminZonal"; }
+
+    @GetMapping("/verAgente")
+    public String showVerAgente() { return "AdminZonal/verAgente-AdminZonal"; }
 
 
 
