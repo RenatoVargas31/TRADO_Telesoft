@@ -16,6 +16,32 @@ public class SuperAdminController {
     public String viewDashboard() {
         return "SuperAdmin/dashboard-SAdmin";
     }
+
+    @GetMapping("/admZonalActivos")
+    public String viewAdmZonalActivos() {
+        return "SuperAdmin/admZonalActivos-SAdmin";
+    }
+
+    @GetMapping("/admZonalInactivos")
+    public String viewAdmZonalInactivos() {
+        return "SuperAdmin/admZonalInactivos-SAdmin";
+    }
+
+    @GetMapping("/agentCompraPostula")
+    public String viewAgentCompraPostula() {
+        return "SuperAdmin/agentCompraPostula-SAdmin";
+    }
+
+    @GetMapping("/agentCompraActivos")
+    public String viewAgentCompraActivos() {
+        return "SuperAdmin/agentCompraActivos-SAdmin";
+    }
+
+    @GetMapping("/agentCompraInactivos")
+    public String viewAgentCompraInactivos() {
+        return "SuperAdmin/agentCompraInactivos-SAdmin";
+    }
+
     @GetMapping("/ayuda")
     public String viewAyuda() {
         return "SuperAdmin/ayuda-SAdmin";
