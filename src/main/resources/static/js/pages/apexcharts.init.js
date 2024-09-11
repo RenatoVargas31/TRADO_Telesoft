@@ -1,17 +1,22 @@
 var options = {
     chart: {height: 380, type: "line", zoom: {enabled: !1}, toolbar: {show: !1}},
-    colors: ["#5664d2", "#1cbb8c"],
+    colors: ["#5664d2", "#1cbb8c", "#fcb92c", "#ff5733", "#33ff57", "#3357ff", "#ff33a1"], // Añadido nuevos colores
     dataLabels: {enabled: !1},
-    stroke: {width: [3, 3], curve: "straight"},
-    series: [{name: "High - 2018", data: [26, 24, 32, 36, 33, 31, 33]}, {
-        name: "Low - 2018",
-        data: [14, 11, 16, 12, 17, 13, 12]
-    }],
-    title: {text: "Average High & Low Temperature", align: "left"},
+    stroke: {width: [3, 3, 3, 3, 3, 3, 3], curve: "straight"}, // Añadido nuevos anchos de línea
+    series: [
+        {name: "Creado", data: [12, 45, 18, 70, 30, 55, 65, 20, 75, 40, 50, 80]},
+        {name: "En validación", data: [15, 50, 22, 60, 28, 48, 72, 30, 63, 50, 40, 78]},
+        {name: "En proceso", data: [20, 38, 25, 42, 30, 70, 55, 35, 65, 45, 75, 78]},
+        {name: "Arribo al País", data: [18, 35, 24, 40, 29, 45, 50, 32, 60, 38, 70, 75]},
+        {name: "En Aduanas", data: [22, 38, 28, 43, 33, 48, 53, 35, 63, 40, 73, 78]},
+        {name: "En ruta", data: [25, 40, 30, 45, 35, 50, 55, 38, 65, 42, 75, 80]},
+        {name: "Recibido", data: [28, 43, 33, 48, 38, 53, 58, 40, 68, 45, 78, 80]}
+    ],
+    title: {text: ".", align: "left"},
     grid: {row: {colors: ["transparent", "transparent"], opacity: .2}, borderColor: "#f1f1f1"},
     markers: {style: "inverted", size: 6},
-    xaxis: {categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"], title: {text: "Month"}},
-    yaxis: {title: {text: "Temperature"}, min: 5, max: 40},
+    xaxis: {categories: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul","Ago","Sep","Oct","Nov","Dic"], title: {text: "Meses"}},
+    yaxis: {title: {text: "N° Productos"}, min: 10, max: 90},
     legend: {position: "top", horizontalAlign: "right", floating: !0, offsetY: -25, offsetX: -5},
     responsive: [{breakpoint: 600, options: {chart: {toolbar: {show: !1}}, legend: {show: !1}}}]
 }, chart = new ApexCharts(document.querySelector("#line_chart_datalabel"), options), options = (chart.render(), {
@@ -156,16 +161,29 @@ var options = {
     legend: {offsetY: 7}
 }), options = ((chart = new ApexCharts(document.querySelector("#column_chart_datalabel"), options)).render(), {
     chart: {
-        height: 350,
+        height: 380,
         type: "bar",
         toolbar: {show: !1}
     },
     plotOptions: {bar: {horizontal: !0}},
     dataLabels: {enabled: !1},
-    series: [{data: [380, 430, 450, 475, 550, 584, 780, 1100, 1220, 1365]}],
-    colors: ["#1cbb8c"],
+    series: [{data: [380, 430, 450, 475, 550, 584, 780, 1100, 1220, 1365].reverse()}],
+    colors: ["#bb1c41"],
     grid: {borderColor: "#f1f1f1", padding: {bottom: 5}},
-    xaxis: {categories: ["South Korea", "Canada", "United Kingdom", "Netherlands", "Italy", "France", "Japan", "United States", "China", "Germany"]},
+    xaxis: {
+        categories: [
+            "Electrónica",
+            "Libros",
+            "Ropa",
+            "Electrodomésticos",
+            "Juguetes",
+            "Equipo Deportivo",
+            "Productos de Belleza",
+            "Comestibles",
+            "Muebles",
+            "Automotriz"
+        ]
+    },
     legend: {offsetY: 5}
 }), options = ((chart = new ApexCharts(document.querySelector("#bar_chart"), options)).render(), {
     chart: {
