@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/superadmin")
 public class SuperAdminController {
-    @GetMapping("/incio")
+    @GetMapping("/inicio")
     public String viewInicio() {
         return "SuperAdmin/prueba";
     }
