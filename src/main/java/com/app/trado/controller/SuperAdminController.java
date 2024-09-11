@@ -42,6 +42,18 @@ public class SuperAdminController {
         return "SuperAdmin/agentCompraInactivos-SAdmin";
     }
 
+    @GetMapping("/importadorSolicitud")
+    public String viewImportdorSolicitud() {
+        return "SuperAdmin/importadorSolicitud-SAdmin";
+    }
+    @GetMapping("/importadorActivos")
+    public String viewImportadorActivos() {
+        return "SuperAdmin/importadorActivos-SAdmin";
+    }
+    @GetMapping("/importadorInactivos")
+    public String viewImportadorInactivos() {
+        return "SuperAdmin/importadorInactivos-SAdmin";
+    }
     @GetMapping("/ayuda")
     public String viewAyuda() {
         return "SuperAdmin/ayuda-SAdmin";
