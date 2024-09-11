@@ -26,5 +26,9 @@ public class AdminZonalController {
     public String showReposicionProductos() {
         return "AdminZonal/tablaReposicionProductos-AdminZonal";
     }
+    @GetMapping("/faq")
+    public String showFaq() {
+        return "AdminZonal/faq";
+    }
 
 }
