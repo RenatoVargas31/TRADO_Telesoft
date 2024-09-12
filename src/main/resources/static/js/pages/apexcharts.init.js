@@ -675,9 +675,9 @@ var options = {
             height: 410,
             type: "pie"
         },
-        series: [44, 55, 41, 17, 15],
-        labels: ["Series 1", "Series 2", "Series 3", "Series 4", "Series 5"],
-        colors: ["#1cbb8c", "#5664d2", "#fcb92c", "#4aa3ff", "#ff3d60"],
+        series: [69.24, 30.76],
+        labels: ["Usuarios activos", "Usuarios inactivos"],
+        colors: ["#fcb92c", "#4aa3ff"],
         legend: {
             show: !0,
             position: "bottom",
